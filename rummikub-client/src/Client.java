@@ -6,14 +6,16 @@ class Client extends JFrame implements Runnable
 {
 	public static void main(String[] ars)
 	{
-    	Client info = new Client();
-        Thread thread = new Thread(info);
-        thread.start();
+    		Client info = new Client();
+        	Thread thread = new Thread(info);
+        	thread.start();
 	}
+	
 	public Client()
 	{
 		super("Entrance");
 	}
+	
 	private JPanel info = new JPanel();
 	private JLabel ip_label = new JLabel("IP");
 	private JLabel port_label = new JLabel("Port");
